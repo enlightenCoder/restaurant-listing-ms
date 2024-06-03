@@ -1,0 +1,17 @@
+server:
+  port: 9091
+spring:
+  profiles:
+    active: dev
+  application:
+    name: RESTAURANT-SERVICE
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+  jpa:
+    database-platform: org.hibernate.dialect.OracleDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
