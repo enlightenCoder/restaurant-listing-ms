@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>RestaurantMapperImpl.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Restaurant-Listing Maven Webapp</a> &gt; <a href="index.source.html" class="el_package">com.codedecode.restaurantListing.mapper</a> &gt; <span class="el_source">RestaurantMapperImpl.java</span></div><h1>RestaurantMapperImpl.java</h1><pre class="source lang-java linenums">package com.codedecode.restaurantListing.mapper;
+
+import com.codedecode.restaurantListing.dto.RestaurantDTO;
+import com.codedecode.restaurantListing.entity.Restaurant;
+import javax.annotation.processing.Generated;
+
+@Generated(
+    value = &quot;org.mapstruct.ap.MappingProcessor&quot;,
+    date = &quot;2024-06-08T08:02:00+0400&quot;,
+    comments = &quot;version: 1.4.2.Final, compiler: javac, environment: Java 17.0.8 (Oracle Corporation)&quot;
+)
+<span class="fc" id="L12">public class RestaurantMapperImpl implements RestaurantMapper {</span>
+
+    @Override
+    public Restaurant mapRestaurantDTOToRestaurant(RestaurantDTO restaurantDTO) {
+<span class="pc bpc" id="L16" title="1 of 2 branches missed.">        if ( restaurantDTO == null ) {</span>
+<span class="nc" id="L17">            return null;</span>
+        }
+
+<span class="fc" id="L20">        Restaurant restaurant = new Restaurant();</span>
+
+<span class="fc" id="L22">        restaurant.setId( restaurantDTO.getId() );</span>
+<span class="fc" id="L23">        restaurant.setName( restaurantDTO.getName() );</span>
+<span class="fc" id="L24">        restaurant.setAddress( restaurantDTO.getAddress() );</span>
+<span class="fc" id="L25">        restaurant.setCity( restaurantDTO.getCity() );</span>
+<span class="fc" id="L26">        restaurant.setRestaurantDescription( restaurantDTO.getRestaurantDescription() );</span>
+
+<span class="fc" id="L28">        return restaurant;</span>
+    }
+
+    @Override
+    public RestaurantDTO mapRestaurantToRestaurantDTO(Restaurant restaurant) {
+<span class="pc bpc" id="L33" title="1 of 2 branches missed.">        if ( restaurant == null ) {</span>
+<span class="nc" id="L34">            return null;</span>
+        }
+
+<span class="fc" id="L37">        RestaurantDTO restaurantDTO = new RestaurantDTO();</span>
+
+<span class="fc" id="L39">        restaurantDTO.setId( restaurant.getId() );</span>
+<span class="fc" id="L40">        restaurantDTO.setName( restaurant.getName() );</span>
+<span class="fc" id="L41">        restaurantDTO.setAddress( restaurant.getAddress() );</span>
+<span class="fc" id="L42">        restaurantDTO.setCity( restaurant.getCity() );</span>
+<span class="fc" id="L43">        restaurantDTO.setRestaurantDescription( restaurant.getRestaurantDescription() );</span>
+
+<span class="fc" id="L45">        return restaurantDTO;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

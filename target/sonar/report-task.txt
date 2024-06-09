@@ -1,0 +1,6 @@
+projectKey=com.codedecode:Restaurant-Listing
+serverUrl=http://54.237.10.158:9000
+serverVersion=10.5.1.90531
+dashboardUrl=http://54.237.10.158:9000/dashboard?id=com.codedecode%3ARestaurant-Listing
+ceTaskId=141e7b82-e33c-48cd-9f40-c85c22104200
+ceTaskUrl=http://54.237.10.158:9000/api/ce/task?id=141e7b82-e33c-48cd-9f40-c85c22104200

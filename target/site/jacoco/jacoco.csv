@@ -1,0 +1,8 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+Restaurant-Listing Maven Webapp,com.codedecode.restaurantListing.mapper,RestaurantMapperImpl,4,59,2,2,2,17,2,3,0,3
+Restaurant-Listing Maven Webapp,com.codedecode.restaurantListing.mapper,RestaurantMapper,0,5,0,0,0,1,0,1,0,1
+Restaurant-Listing Maven Webapp,com.codedecode.restaurantListing.service,RestaurantService,6,46,0,0,0,8,1,4,1,4
+Restaurant-Listing Maven Webapp,com.codedecode.restaurantListing.dto,RestaurantDTO,175,61,39,1,0,8,23,13,3,13
+Restaurant-Listing Maven Webapp,com.codedecode.restaurantListing,RestaurantListingApplication,8,0,0,0,3,0,2,0,2,0
+Restaurant-Listing Maven Webapp,com.codedecode.restaurantListing.controller,RestaurantController,0,30,0,0,0,6,0,4,0,4
+Restaurant-Listing Maven Webapp,com.codedecode.restaurantListing.entity,Restaurant,180,56,40,0,0,8,24,12,4,12

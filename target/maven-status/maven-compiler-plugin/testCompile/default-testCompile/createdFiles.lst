@@ -1,1 +1,3 @@
+com\codedecode\restaurantListing\controller\RestaurantControllerTest.class
 com\codedecode\restaurantListing\RestaurantListingApplicationTests.class
+com\codedecode\restaurantListing\service\RestaurantServiceTest.class
