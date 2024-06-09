@@ -75,7 +75,7 @@ pipeline {
                 checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[ credentialsId: 'git-ssh', url: 'https://github.com/enlightenCoder/deployment-folder.git']])
                 script {
                     sh '''
-                        sed -i "s|image:.*|image: christopherami/restaurant-listing-service:${VERSION}|" aws/restaurant-manifest.yml
+                        sed -i "s/image:.*/image: christopherami\\/restaurant-listing-service:${VERSION}/" aws/restaurant-manifest.yml
                     '''
                     sh 'git checkout main'
                     sh 'git add .'
