@@ -13,7 +13,7 @@ pipeline{
         maven "Maven"
     }
 
-    statges {
+    stages {
 
         stage('Maven Build'){
             steps{
