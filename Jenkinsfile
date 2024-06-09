@@ -66,7 +66,7 @@ pipeline{
                steps{
                     sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --passworrd-stdin'
                     sh 'docker build -t christopherami/restaurant-listing-service:${VERSION}'
-                    sh 'docker push codedecode25/restaurant-listing-service:${VERSION}'
+                    sh 'docker push christopherami/restaurant-listing-service:${VERSION}'
                }
         }
 
