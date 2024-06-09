@@ -7,7 +7,7 @@ import lombok.*;
 @NoArgsConstructor
 public class RestaurantDTO {
 
-
+    // we can make id transient also
     private int id;
 
     private String name;
