@@ -80,7 +80,7 @@ pipeline {
                     sh 'git checkout main'
                     sh 'git add .'
                     sh 'git commit -m "Update image tag"'
-                    sshagent(['git-ssh']) {
+                    sshagent(['git']) {
                         sh 'git push'
                     }
                 }
